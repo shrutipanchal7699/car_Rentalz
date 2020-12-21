@@ -1,0 +1,144 @@
+<div class="container">  
+    <div class="single-slide-item overlay">
+        <div class="container">
+            <br><br>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="book-a-car">
+                        <form action="#" method="get">
+                            <!--== Pick Up Location ==-->
+                            <div class="pickup-location book-item">
+                                <h4>PICK-UP LOCATION:</h4>
+                                <select class="custom-select">
+                                    <option selected="">Select</option>
+                                    <option value="location1">Location1</option>
+                                    <option value="location2">Location2</option>
+                                    <option value="location3">Location3</option>
+                                    <option value="location4">Location4</option>
+                                    <option value="location5">Location5</option>
+                                </select>
+                            </div>
+                            <!--== Pick Up Location ==-->
+
+
+                            <!--== Pick Up Date ==-->
+                            <div class="pick-up-date book-item">
+                                <h4>PICK-UP DATE:</h4>
+                                <div role="wrapper" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group">
+                                    <input class="form-control" id="startdate" name="startdate" placeholder="MM/DD/YYY" type="text"/>
+                                    <span class="input-group-append" role="right-icon">
+                                        <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                    </span>
+                                </div>
+
+                                <div class="return-car">
+                                    <h4>Return DATE:</h4>
+                                    <div role="wrapper" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group">
+                                        <input class="form-control" id="enddate" name="enddate" placeholder="MM/DD/YYY" type="text"/>
+                                        <span class="input-group-append" role="right-icon">
+                                            <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--== Pick Up Date ==-->
+
+                            <!--== Car Choose ==-->
+                            <div class="choose-car-type book-item">
+                                <h4>CHOOSE CAR TYPE:</h4>
+                                <select class="custom-select">
+                                    <option selected="">Select</option>
+                                    <option value="pickup">Pickup</option>
+                                    <option value="sedan">Sedan</option>
+                                    <option value="hatcback">Hatcback</option>
+                                </select>
+                            </div>
+                            <!--== Car Choose ==-->
+
+                            <br>
+                            <div class="book-button text-center">
+                                <button class="btn-warning btn-lg">List options</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 text-right">
+                    <div class="display-table">
+                        <div class="display-table-cell">
+                            <div class="slider-right-text">
+                                <h1>BOOK A CAR TODAY!</h1>
+                                <p>THE RENTER COMPANY CAN PUT SOME COOL DISCOUNT HERE <br> FOR OUR RETURNING CUSTOMERS AND SJSU STUDENTS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+    
+    <script>
+        $('#startdate').datepicker();
+        $('#enddate').datepicker();
+    </script> 
+</div>
+
+<style>
+   body{
+
+       background-image: url('/image/trip.jpg');
+       background-repeat: no-repeat;
+       background-size:100%;
+      
+       
+   }
+   h1{
+       font-size: 250%
+   }
+   h2{
+       color: black
+   }
+
+   .inner-footer{
+       margin: 0;
+       padding: 0;
+       background-color: #272727;
+       width: 100%;
+
+   }
+   .quick-links{
+       display: flex;
+       width: 560px;
+       height: 50px;
+       font-size: 20px;
+       margin: auto;
+   }
+
+   .quick-links ul{
+       display: flex;
+   }
+   .quick-items{
+       list-style: none;
+   }
+
+   .quick-items a{
+       text-decoration: none;
+       padding: 0px 15px;
+       font-size: 25px;
+       color: white;
+   }
+
+   .outer-footer{
+       padding: none;
+       text-align: center;
+       color: white;
+       font-size: 15px;
+       height: 29px;
+        background-color: #272727;
+
+   }
+
+
+
+   
+</style>
